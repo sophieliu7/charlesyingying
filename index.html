@@ -16,10 +16,27 @@ p {line-height: 2}
     background-position: center;
     background-size: cover;
 }
-.bgimg {background-image: linear-gradient(-225deg, rgba(184, 38, 1, 0.3) 20%, rgba(129, 55, 114, 0.3) 50%),url("./images/wed19.jpg"); background-attachment: fixed;-webkit-animation-duration: 3s;-webkit-animation-name: slideinbottom;}
+.bgimg {background-image: linear-gradient(-225deg, rgba(184, 38, 1, 0.3) 20%, rgba(129, 55, 114, 0.3) 50%),url("https://res.cloudinary.com/ddq43a1rw/image/upload/c_scale,w_1117/v1537356292/wed19.jpg"); background-attachment: fixed;-webkit-animation-duration: 3s;-webkit-animation-name: slideinbottom;}
 .bgimg2 {background-image: linear-gradient(-225deg, rgba(184, 38, 1, 0.3) 10%, rgba(129, 55, 114, 0.3) 50%),url("https://res.cloudinary.com/ddq43a1rw/image/upload/v1535580492/tour.jpg"); background-attachment: fixed;}
 </style>
 <body>
+
+<!-- NAVBAR TEST RESPONSIVE -->
+
+
+<div class="topnav" id="myTopnav">
+  <!--  <div class=" w3-white w3-opacity-min w3-hover-opacity-off"> -->
+  <a href="./cn.html" class="w3-button">中文版</a>
+  <a href="#home"  class="w3-button">Accueil</a>
+  <a href="#us" class="w3-button">Yingying & Charles</a>
+  <a href="#wedding" class="w3-button">Programme</a>
+  <a href="#info" class="w3-button">Information pratique</a>
+  <a href="#rsvp" class="w3-button w3-hover-black">RSVP</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+<!-- </div> -->
+</div>
 
 <!-- Header / Home-->
 <header class=" w3-text-yellow  w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
@@ -31,7 +48,7 @@ p {line-height: 2}
 </header>
 
 <!-- Navbar (sticky top) -->
-<div class="w3-top w3-hide-small">
+<!-- <div class="w3-top">
   <div class="w3-text-yellow w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
     <a href="./index_ch.html" style="width:16.5%" class="w3-bar-item w3-button">中文版</a>
     <a href="#home" style="width:16.5%" class="w3-bar-item w3-button">Accueil</a>
@@ -40,7 +57,7 @@ p {line-height: 2}
     <a href="#info" style="width:16.5%" class="w3-bar-item w3-button">Information pratiques</a>
     <a href="#rsvp" style="width:16.5%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
   </div>
-</div>
+</div> -->
 
 <!-- About  -->
 <div class="w3-center w3-container w3-padding-64 w3-white w3-text-black w3-grayscale-min" id="us">
@@ -92,7 +109,7 @@ p {line-height: 2}
   <h1>Nous espérons vous voir !</h1>
   <p class="w3-large">Vous souhaitez partager notre bonheur en venant assister à notre mariage?
     <br>C'est le moment de confirmer votre présence !
-    <br> <br>Merci de répondre avant le 9 Septembre, 2018</p> <br>
+    <br> <br>Merci de répondre avant le 9 Septembre 2018</p> <br>
   <p class="w3-xlarge">
     <a href="https://www.typeform.com/">
     <button href="https://www.typeform.com/" class="w3-black w3-button w3-round  w3-hover-opacity-off" style="padding:8px 60px">RSVP  <i class="far fa-envelope-open"></i></button>
@@ -160,6 +177,19 @@ p {line-height: 2}
   <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.linkedin.com/in/liusophie/" title="Sophie Liu" target="_blank" class="w3-hover-text-green">Sophie Liu</a></p>
 </footer>
 <div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 
 </body>
 </html>
